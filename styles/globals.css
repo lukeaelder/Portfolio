@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: "Silka";
+      font-weight: 100;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-thin.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-thin.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Silka";
+      font-weight: 200;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-extralight.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-extralight.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Silka";
+      font-weight: 300;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-light.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-light.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Silka";
+      font-weight: 400;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-regular.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-regular.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Silka";
+      font-weight: 500;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-medium.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-medium.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Silka";
+      font-weight: 600;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-semibold.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-semibold.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Silka";
+      font-weight: 700;
+      font-display: swap;
+      src: url("/fonts/Silka/silka-bold.woff2") format("woff2");
+      src: url("/fonts/Silka/silka-bold.woff") format("woff");
+    }
+}
+
+body {
+  -ms-overflow-style: none;
+  overflow-x:hidden;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar { 
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.split-line {
+  overflow: hidden;
+}
+
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #CA363A;
+  --gradient-color-2: #D83E40;
+  --gradient-color-3: #C94337;
+  --gradient-color-4: #D44D40;
+}
