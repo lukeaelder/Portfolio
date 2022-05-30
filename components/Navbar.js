@@ -58,7 +58,7 @@ const NavBar = ({scrollTo, scrollPaused}) => {
                                 <p className={`group-hover:translate-x-[20px] transition ${open ? '' : 'translate-x-[60px] duration-300'}`}>Contact</p>
                             </div>
                         </div>   
-                        <div className="absolute bottom-12 px-[5vw] lg:px-8 flex">
+                        <div className="absolute bottom-20 lg:bottom-12 px-[5vw] lg:px-8 flex">
                             <a href="https://github.com/lukeaelder" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <div className={`group p-6 w-fit cursor-pointer transition ${open ? '' : 'translate-x-[20px] duration-300'}`}>
                                     <p className="transition group-hover:-translate-y-1 group-hover:text-white">GitHub</p>
