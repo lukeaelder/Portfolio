@@ -23,7 +23,7 @@ const Loader = () => {
     }, [])
 
     return (
-        <div ref={el} className="fixed top-0 left-0 w-[100vw] h-[100vh] pointer-events-auto">
+        <div ref={el} className="fixed top-0 left-0 w-[100vw] min-h-[100vh] pointer-events-auto">
             <div className="load-bg w-full h-full absolute bg-neutral-900 origin-top"></div>
             <div className="load-rnd w-[110%] h-full absolute bg-neutral-900 rounded-[100%_100%] translate-y-[50%] translate-x-[-5%]"></div>
             <div className="load-box absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center opacity-0">
