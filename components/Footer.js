@@ -12,7 +12,7 @@ const Footer = () => {
     }, [])
 
     return (
-        <div ref={el} className="w-full h-[250px] bg-transparent px-[5vw] relative overflow-x-hidden">
+        <div ref={el} className="w-full h-[250px] bg-transparent px-[5vw] relative overflow-x-clip">
             <div className="w-full h-full flex items-center justify-center overflow-hidden">
                 <a href="https://github.com/lukeaelder" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="group" data-lag="0.3">
                     <div className="w-[100px] h-[100px] bg-neutral-900 rounded grid place-items-center group-hover:translate-y-[-6px] group-hover:bg-blue-600 transition">

@@ -1,16 +1,20 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay'
 
 const ImageCarousel = ({images}) => {
-    return (
-        <Carousel autoPlay={true} interval={8000} infiniteLoop={true} showIndicators={false} showThumbs={false} showStatus={false} emulateTouch={true} className="max-w-[500px] xl:max-w-[600px] min-w-[300px] shadow-lg shadow-slate-200">
-            {images.map((e, i) => 
-                <div key={i}>
-                    <img src={e} alt="Project Image" className="rounded"></img>
-                </div>
-            )}
-        </Carousel>
-    )
-}
+	const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({delay: 10000})]);
+
+	return (
+		<div className='embla overflow-hidden' ref={emblaRef}>
+			<div className='embla__container flex'>
+				{images.map((e, i) => 
+					<div key={i} className="relative flex-[0_0_100%]">
+						<img src={e} alt="Project Image" className="rounded max-h-[300px] mx-auto xl:max-h-[320px] xl:mx-0 xl:ml-auto"></img>
+					</div>
+            	)}
+			</div>
+		</div>
+	);
+};
 
 export default ImageCarousel;

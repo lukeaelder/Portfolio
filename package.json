@@ -10,19 +10,22 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "embla-carousel-autoplay": "^7.0.0-rc05",
+    "embla-carousel-react": "^7.0.0-rc05",
     "gsap": "npm:@gsap/shockingly@^3.10.4",
     "next": "12.1.6",
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^9.0.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.13",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "tailwindcss": "^3.0.24"
   }
 }
