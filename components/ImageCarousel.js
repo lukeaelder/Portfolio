@@ -2,7 +2,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay'
 
 const ImageCarousel = ({images}) => {
-	const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({delay: 10000})]);
+	const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({delay: 10000, stopOnInteraction: false, stopOnMouseEnter: true})]);
 
 	return (
 		<div className='embla overflow-hidden' ref={emblaRef}>
