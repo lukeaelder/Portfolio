@@ -22,18 +22,18 @@ const Projects = () => {
                 <Project
                     name='SVG Icon Library'
                     desc='A collection of SVG icons perfect for use on websites or apps. Search through all the icons online to find the one you need or install it as a package for easy use.'
-                    stack={['Next.js', 'Tailwind CSS', 'GSAP']}
+                    stack={['Next.js', 'Tailwind CSS', 'Fuse.js', 'Rollup']}
                     links={[
                         ['github', 'https://github.com/lukeaelder/eldicons'],
                         ['external', 'https://eldicons.com'],
                     ]}
                     images={['/images/eldicons/eldicons1.png','/images/eldicons/eldicons2.png']}
-                />
+                    />
                 <div className='my-3 h-[1px] w-full bg-neutral-300'></div>
                 <Project
                     name='Developer Toolbox'
                     desc='A collection of easy to use tools for developers, ranging from simple tools performing string manipulation to more advanced tools.'
-                    stack={['Next.js', 'Tailwind CSS', 'Fuse.js', 'Rollup']}
+                    stack={['Next.js', 'Tailwind CSS', 'GSAP']}
                     links={[
                         ['github', null],
                         ['external', 'https://wdtoolbox.com'],
